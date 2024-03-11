@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link  rel="stylesheet" href="quiz.css">
+
+</head>
+<body>
+    <div class="user">
+        <img src="https://static.thenounproject.com/png/3201587-200.png">
+        <p id="use-in">user</p>
+    </div>
+    
+    <div id="intro">
+        <form>
+        <h1>Simple Quiz</h1>
+        <pre id="u-n">Enter your Name to continue:
+            <input type="text" id="u-name" placeholder="Ex:Alex" required></pre>
+        <label for="cat">Category:</label>
+        <select name="category" id="cat">
+            <option value="music">Music</option>
+            <option value="film">Film</option>
+            <option value="computers">Computers</option>
+        </select>
+        <br/>
+        <br/>
+        <label for="diff">Difficulty level: </label>
+        <select name="difficulty" id="diff">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <br>
+        <input type="submit" class="submit-button" value="Start" onclick="submitForm();">
+    </form>
+    </div>
+    
+<script src="quiz.js"></script>
+</body>
+</html>
